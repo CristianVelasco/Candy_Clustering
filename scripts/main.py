@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
     Data_candy = pd.read_csv('../data/processed/Candy_out.csv')
 
-    kmeansmin = MiniBatchKMeans(n_clusters = 4, batch_size = 8)
+    kmeansmin = MiniBatchKMeans(n_clusters = 4, batch_size = 4, random_state = 42)
     
     kmeansmin.fit(Data_candy)
 
